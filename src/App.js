@@ -1,3 +1,4 @@
+import Articles from "./components/Articles";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Login from "./components/auth/login";
 import Register from "./components/auth/register";
@@ -27,7 +28,8 @@ function App() {
       element: <Home />,
     },
     {
-      path: "/articles"
+      path: "/articles",
+      element: <Articles/>
     }
   ];
   let routesElement = useRoutes(routesArray);

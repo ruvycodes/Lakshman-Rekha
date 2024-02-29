@@ -14,6 +14,7 @@ const Header = () => {
                     <>
                         <div className='flex'>
                             <img className='w-10 h-10 left-2 top-2 fixed' src="replicate-prediction-d6pfwnjb65seipyxicht6ryi6y.png" alt="" />
+                            <Link className='text-md text-blue-600 fixed right-44 top-4' to={'articles'}>Articles</Link>
                             <button onClick={() => { doSignOut().then(() => { navigate('/login') }) }} className='text-md text-blue-600  bg-blue-600 text-white px-4 py-1 rounded-xl right-8 fixed top-3'>Logout</button>
                         </div>
                     </>
